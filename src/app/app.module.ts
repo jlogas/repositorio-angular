@@ -5,16 +5,22 @@ import { AppComponent } from './app.component';
 import { AppToolbarComponent } from './app-toolbar/app-toolbar.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { AppEstudiantesComponent } from './app-estudiantes/app-estudiantes.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MiDirectivaDirective } from './mi-directiva.directive';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppToolbarComponent,
     AppNavbarComponent,
-    AppEstudiantesComponent
+    AppEstudiantesComponent,
+    MiDirectivaDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

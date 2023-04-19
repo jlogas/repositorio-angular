@@ -1,4 +1,12 @@
 .estudiantes{
-    background-color: aqua;
+    background-color: white;
     height: 100%;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
 }
