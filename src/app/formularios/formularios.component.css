@@ -1,0 +1,30 @@
+.msjErorr{
+    color: red;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black solid;
+    padding: 10%;
+    border-radius: 10px;
+    margin-right: 30%;
+}
+
+.boton{
+    margin-left: 35%;
+    margin-top: 10%;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 5%;
+}
+
+.input{
+    background-color: rgb(195, 241, 241);
+    border-color: rgb(195, 241, 241);
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+}
+

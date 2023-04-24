@@ -1,0 +1,21 @@
+
+<div style="margin-top: 3%;" class="formulario">
+    <form [formGroup]="formularioActividad" (submit)="submitActividad()">
+        Usuario: <input type="text" formControlName="usuario" class="input"/>
+        <span *ngIf="this.formularioActividad.get('usuario')?.errors?.['required']" class="msjErorr">  (Diguite un usuario) </span>
+        <span *ngIf="this.formularioActividad.get('usuario')?.errors?.['minlength']" class="msjErorr">  (Diguite minimo 4 caracteres) </span>
+
+        <br>
+        Email: <input type="text" formControlName="email" class="input"/>
+        <span *ngIf="this.formularioActividad.get('email')?.errors?.['required']" class="msjErorr"> (Diguite un correo) </span>
+        <span *ngIf="this.formularioActividad.get('email')?.errors?.['email']" class="msjErorr"> (Diguite un correo valido) </span>
+        <br>
+        Edad: <input type="text" formControlName="edad" class="input"/>
+        <span *ngIf="this.formularioActividad.get('edad')?.errors?.['required']" class="msjErorr"> (Diguite su edad) </span>
+        <br>
+        <button type="submit" class="boton">enviar</button>
+    </form>
+   
+
+    
+</div>

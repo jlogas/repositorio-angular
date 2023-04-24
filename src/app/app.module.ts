@@ -7,7 +7,8 @@ import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { AppEstudiantesComponent } from './app-estudiantes/app-estudiantes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MiDirectivaDirective } from './mi-directiva.directive';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormulariosComponent } from './formularios/formularios.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,15 @@ import { FormsModule } from '@angular/forms';
     AppToolbarComponent,
     AppNavbarComponent,
     AppEstudiantesComponent,
-    MiDirectivaDirective
+    MiDirectivaDirective,
+    FormulariosComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

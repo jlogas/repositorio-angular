@@ -34,3 +34,5 @@ eliminar1(){
   this.apellido="messi"
  }
 }
+
+
