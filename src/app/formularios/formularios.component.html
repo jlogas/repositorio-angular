@@ -13,9 +13,21 @@
         Edad: <input type="text" formControlName="edad" class="input"/>
         <span *ngIf="this.formularioActividad.get('edad')?.errors?.['required']" class="msjErorr"> (Diguite su edad) </span>
         <br>
-        <button type="submit" class="boton">enviar</button>
+        <button mat-button color="warn" type="submit" >enviar</button>
     </form>
-   
-
     
+
+   <hr>
+   <br>  
 </div>
+<div>
+    <table style="border: solid;">
+        <tr *ngFor="let persona of arrayEstu">
+          <td>{{persona.usuario}}</td>
+          <td>{{persona.email}}</td>
+          <td>{{persona.edad}}</td>
+        </tr>
+      </table>
+</div>
+
+

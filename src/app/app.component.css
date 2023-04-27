@@ -1,7 +1,7 @@
 .contenedor{
     display: grid;
-    grid-template-rows: 20% 80%;
-    grid-template-columns: 30% 70%;
+    grid-template-rows: 7% 80%;
+    grid-template-columns: 20% 80%;
     grid-template-areas: 
     "tool tool"
     "nav estudiantes"
@@ -11,6 +11,7 @@
 }
 .cabeza{
 grid-area: tool;
+ 
 }
 .nav{
 grid-area: nav;
