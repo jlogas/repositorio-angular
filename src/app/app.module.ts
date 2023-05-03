@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { InjectionToken, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -10,6 +10,12 @@ import { MiDirectivaDirective } from './mi-directiva.directive';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormulariosComponent } from './formularios/formularios.component';
 import { MaterialModule } from './material/material.module';
+import { MiCustomPipe } from './formularios/mi-custom.pipe';
+import { ListaAlumnosComponent } from './lista-alumnos/lista-alumnos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ObservablesComponent } from './observables/observables.component';
+
+export const APIURL =new InjectionToken('APIURL');
 
 @NgModule({
   declarations: [
@@ -19,6 +25,9 @@ import { MaterialModule } from './material/material.module';
     AppEstudiantesComponent,
     MiDirectivaDirective,
     FormulariosComponent,
+    MiCustomPipe,
+    ListaAlumnosComponent,
+    ObservablesComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,9 +35,15 @@ import { MaterialModule } from './material/material.module';
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
+    HttpClientModule
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APIURL,
+      useValue:'https://rickandmortyapi.com/',
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
