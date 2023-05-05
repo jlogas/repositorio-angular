@@ -4,5 +4,5 @@ export class Student{
         public nombre: string,
         public apellido: string,
         public email: string
-    ){}
+    ){}  
 }

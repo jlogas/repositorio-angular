@@ -40,7 +40,7 @@ export class FormulariosComponent implements OnInit {
       apellido:['',[Validators.minLength(4),Validators.required]],
       email:['',[Validators.required,Validators.email]],
     })
-    
+      
    }
    
 

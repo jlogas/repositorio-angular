@@ -14,8 +14,18 @@ import { MiCustomPipe } from './formularios/mi-custom.pipe';
 import { ListaAlumnosComponent } from './lista-alumnos/lista-alumnos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ObservablesComponent } from './observables/observables.component';
+import { Route, RouterModule, Routes } from '@angular/router';
+import { ListaClasesComponent } from './lista-clases/lista-clases.component';
+import { VistaComponent } from './vista/vista.component';
 
 export const APIURL =new InjectionToken('APIURL');
+
+const rutas: Routes=[
+  {path: 'uno', component: FormulariosComponent},
+  {path: 'dos', component: ListaClasesComponent},
+  {path: 'vista', component: VistaComponent},
+  {path: 'vista/ :parametro', component: VistaComponent},
+]
 
 @NgModule({
   declarations: [
@@ -28,6 +38,7 @@ export const APIURL =new InjectionToken('APIURL');
     MiCustomPipe,
     ListaAlumnosComponent,
     ObservablesComponent,
+    ListaClasesComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +46,8 @@ export const APIURL =new InjectionToken('APIURL');
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(rutas),
 
   ],
   providers: [
