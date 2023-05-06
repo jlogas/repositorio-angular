@@ -24,7 +24,7 @@ const rutas: Routes=[
   {path: 'uno', component: FormulariosComponent},
   {path: 'dos', component: ListaClasesComponent},
   {path: 'vista', component: VistaComponent},
-  {path: 'vista/ :parametro', component: VistaComponent},
+
 ]
 
 @NgModule({
@@ -33,7 +33,7 @@ const rutas: Routes=[
     AppToolbarComponent,
     AppNavbarComponent,
     AppEstudiantesComponent,
-    MiDirectivaDirective,
+    MiDirectivaDirective, 
     FormulariosComponent,
     MiCustomPipe,
     ListaAlumnosComponent,
@@ -48,6 +48,7 @@ const rutas: Routes=[
     MaterialModule,
     HttpClientModule,
     RouterModule.forRoot(rutas),
+    
 
   ],
   providers: [

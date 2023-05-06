@@ -8,26 +8,26 @@ import { Materias } from '../models/materias.model';
 })
 export class ListaClasesComponent implements OnInit{
 
-  materias: Materias [] =[
-    {id: 1,
+  materias: Materias[] =[
+    {id: 134,
       materia: 'calculo',
       profesor: 'pedro morales'
     },
     {
-      id: 2,
-      materia: 'sosiales',
-      profesor: 'Gilma quintero'
+      id: 2323,
+      materia:'sosiales',
+      profesor:'Gilma quintero'
     },
     {
-      id: 3,
+      id: 3234,
       materia: 'fisica',
-      profesor: 'Michael'
+      profesor: 'Michael plazas' 
     },
   ];
 
-  Columns=['id','materia','profesor'];
+  displayedColumns = ['id','materia','profesor'];
+  
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
 }
