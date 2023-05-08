@@ -4,12 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormulariosComponent } from './formularios/formularios.component';
 import { VistaComponent } from './vista/vista.component';
 import { ListaClasesComponent } from './lista-clases/lista-clases.component';
+import { ListaAlumnosComponent } from './lista-alumnos/lista-alumnos.component';
 
 
 const rutas: Routes=[      
   {path: 'uno', component: FormulariosComponent},
   {path: 'dos', component: ListaClasesComponent},
-  {path: 'vista', component: VistaComponent},
+  {path: '', component: VistaComponent},
 
 ]
 @NgModule({

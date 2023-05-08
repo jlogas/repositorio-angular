@@ -1,1 +1,21 @@
-<p>vista works!</p>
+<div class="body">
+    <mat-spinner diameter="50" *ngIf="loading"></mat-spinner>
+    
+    <img src="https://cdn-icons-png.flaticon.com/512/5087/5087607.png" alt="">
+
+    <p>login</p>
+    <form [formGroup]="form"(ngSubmit)="ingresar()"*ngIf="!loading">
+        <mat-form-field appearance="fill">
+            <mat-label>User</mat-label> 
+            <input matInput formControlName="usuario"> 
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="fill">
+            <mat-label>password</mat-label>
+            <input type="password" matInput formControlName="password">
+          </mat-form-field>
+          <br>
+          <button type="submit" mat-raised-button color="primary" [disabled]="form.invalid">LOGIN</button>
+    </form>
+</div>
+
