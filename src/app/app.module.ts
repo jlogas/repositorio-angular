@@ -17,15 +17,11 @@ import { ObservablesComponent } from './observables/observables.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { ListaClasesComponent } from './lista-clases/lista-clases.component';
 import { VistaComponent } from './vista/vista.component';
+import { AppRoutingModule } from './app-routing.module';
 
 export const APIURL =new InjectionToken('APIURL');
 
-const rutas: Routes=[
-  {path: 'uno', component: FormulariosComponent},
-  {path: 'dos', component: ListaClasesComponent},
-  {path: 'vista', component: VistaComponent},
 
-]
 
 @NgModule({
   declarations: [
@@ -47,7 +43,8 @@ const rutas: Routes=[
     ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
-    RouterModule.forRoot(rutas),
+    AppRoutingModule,
+    
     
 
   ],
