@@ -5,4 +5,4 @@ export class Student{
         public apellido: string,
         public email: string
     ){}  
-}
+}  
