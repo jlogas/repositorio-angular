@@ -35,4 +35,10 @@ constructor( private _usuarioService: UsuarioService){
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
+
+  eliminaraUsario(index: number){
+    console.log(index);
+    this._usuarioService.eliminaraUsario(index);
+    this.cargarUsuarior();
+  }
 }
