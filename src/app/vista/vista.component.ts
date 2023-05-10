@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./vista.component.css']
 })
 export class VistaComponent implements OnInit {
-  form: FormGroup;
+  form: FormGroup; 
   loading = false;
  constructor(private fb: FormBuilder,private _snackBar: MatSnackBar, private router: Router){
   this.form = this.fb.group({
     usuario:['', Validators.required],
     password:['', Validators.required],
-  })
+  }) 
  }
   ngOnInit(): void {
    

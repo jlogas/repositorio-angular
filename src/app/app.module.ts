@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppEstudiantesComponent } from './app-estudiantes/app-estudiantes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MiDirectivaDirective } from './mi-directiva.directive';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormulariosComponent } from './formularios/formularios.component';
 import { MaterialModule } from './material/material.module';
@@ -20,10 +19,9 @@ export const APIURL =new InjectionToken('APIURL');
 
 
 @NgModule({
-  declarations: [
+  declarations: [ 
     AppComponent,
-    AppEstudiantesComponent,
-    MiDirectivaDirective, 
+    AppEstudiantesComponent, 
     FormulariosComponent,
     MiCustomPipe,
     ListaAlumnosComponent,
