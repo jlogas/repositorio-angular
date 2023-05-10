@@ -31,7 +31,7 @@ describe('VistaComponent', () => {
     const password = app.form.controls['password']
     usuario.setValue('juan')
     password.setValue('1234') 
-    expect(form.invalid).toBeTrue();
+    expect(form.invalid).toBeTrue(); 
 
 
 
