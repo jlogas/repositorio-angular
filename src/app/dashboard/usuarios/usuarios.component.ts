@@ -26,10 +26,12 @@ constructor( private _usuarioService: UsuarioService){
   ngOnInit(): void {
     this.cargarUsuarior()
   }
+
+  
   cargarUsuarior(){
     this.listUusarios = this._usuarioService.getUsuario();
     this.dataSource = new MatTableDataSource(this.listUusarios)
-  }
+  }  
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;

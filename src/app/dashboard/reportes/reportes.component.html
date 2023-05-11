@@ -1,3 +1,15 @@
 <mat-toolbar>
     <span>Reportes</span>
   </mat-toolbar>
+
+  <div class="materias">
+    <div *ngFor="let clase of listaClases" class="cartas">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Profesor:{{clase.usuarioProfe}}</h5>
+          <p class="card-text">No estudiantes:{{clase.estudiantes}}</p>
+          <p class="card-text">Ciudad de origen:{{clase.ciudadDeOrigen}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

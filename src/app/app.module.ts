@@ -25,6 +25,7 @@ export const APIURL =new InjectionToken('APIURL');
     MaterialModule,
     HttpClientModule,
     AppRoutingModule,
+    HttpClientModule
     
     
 

@@ -19,7 +19,7 @@ export class UsuarioService {
   getUsuario(){
     return this.listaUsuarios.slice();
   }
-
+  
   eliminaraUsario(index: number){
     this.listaUsuarios.splice(index,1);
   }

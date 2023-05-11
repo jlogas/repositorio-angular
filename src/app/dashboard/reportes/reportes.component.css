@@ -1,0 +1,8 @@
+.materias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cartas{
+    margin: 1%;
+}
